@@ -1,0 +1,21 @@
+.signup-wrapper{
+    align-items: center;
+    box-shadow: 0px 0px 30px 8px var(--shadow-color);
+    width:70%;
+    max-width: 400px;
+    border-radius: 1rem;
+    padding:1rem 1.5rem;
+}
+.title{
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+.p-or{
+    font-weight: 300;
+    text-align: center;
+    margin:0;
+    font-size: 0.8rem;
+}
