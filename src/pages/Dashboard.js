@@ -126,11 +126,12 @@ function Dashboard() {
   return (
     <div>
       <Header />
+
       {loading ? (
         <p>loading...</p>
       ) : (
         <>
-          <Cards
+       <Cards
             showIncomeModal={showIncomeModal}
             showExpenseModal={showExpenseModal}
             income={income}
