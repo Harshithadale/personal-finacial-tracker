@@ -2,14 +2,14 @@ import React from 'react'
 import './style.css'
 import { Card,Row,Col } from 'antd'
 import Button from '../Button'
-function Cards({income,expense,totalBalance,showIncomeModal,showExpenseModal,}) {
+function Cards({income,expense,totalBalance,showIncomeModal,showExpenseModal,resetTransactions}) {
   return (
     <div>
       <Row className='my-row'>
         <Card className="my-card" bordered={true}>
           <h2>Current Balance</h2>
           <p><span>&#8377;</span>{totalBalance}</p>
-          <Button text={"Reset Button"} blue={true}/>
+          <Button text={"Reset Button"} blue={true} onClick={resetTransactions}/>
         </Card>
         <Card className="my-card" bordered={true}>
           <h2>Total Income</h2>

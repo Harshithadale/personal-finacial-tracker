@@ -48,7 +48,7 @@ function ChartComponent({sortedTransactions}) {
       </div>
        <div>
         <h2>Your Spendings</h2>
-        {spendingConfig.length !=0 ?<Pie {...spendingConfig} onReady={(chartInstance) => (pieChart = chartInstance)} />:<p style={{color:"grey",textAlign:'center',fontWeight:"1.2rem"}}>You don't Have any Spenings Till Now</p>}
+        {finalSpendings.length !==0 ?<Pie {...spendingConfig} onReady={(chartInstance) => (pieChart = chartInstance)} />:<p style={{color:"grey",textAlign:'center',fontWeight:"1.2rem"}}>You don't Have any Spenings Till Now</p>}
       </div>
     </div>
   )
